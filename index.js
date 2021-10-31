@@ -59,21 +59,21 @@ function bai15() {
     chuoi1= chuoi1.join("");
     document.getElementById('kqua15').value = chuoi1;
 }
-// function bai16() {
-//     let chuoi = document.getElementById('chuoiB16').value;
-//     chuoi = chuoi.split("");
-//     let n = chuoi.length;
-//     let chuoi2="";
-//     for(let i=n-1 ; i>=0; i++)
-//     {
-//         if(chuoi[i]== "/")
-//         {
-//             chuoi2 += chuoi.slice(i+1, n).join("");
-//             break;
-//         }
-//     }
-//     document.getElementById('kqua16').value = chuoi2;
-// }
+function bai16() {
+    let chuoi = document.getElementById('chuoiB16').value;
+    chuoi = chuoi.split("");
+    let n = chuoi.length;
+    let chuoi2="";
+    for(let i=n-1 ; i>=0; i--)
+    {
+        if(chuoi[i]== "/")
+        {
+            chuoi2 += chuoi.slice(i+1, n).join("");
+            break;
+        }
+    }
+    document.getElementById('kqua16').value = chuoi2;
+}
 function bai17() {
     let soa= parseInt(document.getElementById('so1').value);
     let sob= parseInt(document.getElementById('so2').value);
